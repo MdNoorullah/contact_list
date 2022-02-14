@@ -1,0 +1,24 @@
+<html>
+      <head>
+        <title>
+                <%=title %>  
+                <!-- print or show a value = reqd                                    -->
+        </title>
+      </head> 
+      <body>
+               <h1> playground</h1>     
+               <ul>
+                    <!-- we reqd to enclose the javascript codes                                         -->
+                    <% for( let i=0;i<6;i++){ %>   
+                      <li>
+                               <%= i%>                                    
+                      </li>  
+                      <% }%>                                                                              
+               </ul>            
+               <% if(true)  {%>
+                       <h1>it's true!</h1>                      
+                  <%}else{%>   
+                                             
+                 <%}%>                            
+      </body>                                      
+</html>

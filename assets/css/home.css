@@ -1,0 +1,54 @@
+body{
+ margin: 0;
+ font-family: sans-serif;                                    
+}
+#page-heading{
+ text-align: center;   
+ margin-top: 25px; 
+ color: grey;    
+}
+.display-contacts{
+      text-align: center; 
+     margin: auto;
+          
+                                
+}
+
+#mobile{
+  position: relative;
+  float: right;
+
+}
+
+#delete{
+  position: relative;
+  margin-top: 5px;
+}
+
+ul{
+  list-style: none;  
+                                           
+}
+li{
+    background-color: rgb(51, 89, 161);   
+ 
+    color: wheat;                                      
+    border-bottom: 2px solid wheat;     
+    margin-left: 15%;  
+    margin-right: 15%;  
+    /* align-content: space-between;   */                          
+}
+.contacts{
+  display: flex;
+  padding-left: 5%;
+}
+li:hover{
+    background-color: gray;   
+    color: white;    
+                            
+}
+
+input{
+   border:none;  
+   border-bottom: 1px solid black;                                       
+}

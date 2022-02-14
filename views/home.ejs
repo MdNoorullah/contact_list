@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <title>
+            <%= title %>
+      </title>
+      <script src="https://kit.fontawesome.com/c622d74338.js" crossorigin="anonymous"></script>
+      <!-- as middle ware finds assets file so path from assets we have to give -->
+      <link rel="stylesheet" href="css/newHome.css">
+  </head>
+<body>
+                                                
+   <h1 id="heading"><i class="fas fa-address-book"></i>My Contact List</h1>  
+                                                   
+            <div>
+                  <ul> 
+                        <% for(let i of contact_list){ %>
+                              <li>
+                                 <p>  <%=i.name%>   </p> 
+                                 <p> <%=i.Mobile_NO%> </p>
+                              </li>
+                                    
+                                    <a href="/delete-contacts/?id=<%=i._id%>">
+                                          <i class="fas fa-window-close"></i>
+                                    </a>
+
+                        <%}%>
+                  </ul>
+
+            </div>
+            <hr style="width: 80%;">
+                  <div>
+                        <!-- method is post means wants to give some data to server -->
+                              <form action="/create-contact" method="POST">
+                                    <div class="form-group">
+                                          <input type="text" name="Name" placeholder="Enter Name" required>
+                                          <input type="number" name="Mobile_NO" placeholder="Enter phone" required>
+                                    </div>
+                                          <button type="submit">Add Contact</button>
+                              </form>  
+                                                   </div>
+                                                   <script type="text/javascript" src="js/home.js"></script>     
+                                                   <script src="https://kit.fontawesome.com/c622d74338.js" crossorigin="anonymous"></script>                      
+                                             </body>
+</html>
